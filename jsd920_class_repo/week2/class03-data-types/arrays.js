@@ -58,8 +58,17 @@ console.log(q4);
 
 // Your code here
 //Perform the same action for each item in the array
+console.log("Bonus Question 1");
 
-
+var bonus1 = imageFiles.map( function(imageFile) {
+    //return imageFile.toUpperCase();
+    var fileChars = imageFile.split('');
+    var firstLetter = fileChars[0].toUpperCase();
+    fileChars.shift();
+    var newName = firstLetter + fileChars.join('');
+    return newName;
+} )
+console.log(bonus1);
 // ____________________________________________________________________________
 
 /**
@@ -131,6 +140,7 @@ console.log(q7);
  */
 
  // Your code here
+console.log("Bonus Question2");
 
 
  /** - BONUS 3
