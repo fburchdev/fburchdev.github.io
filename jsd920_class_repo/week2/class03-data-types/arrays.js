@@ -141,6 +141,8 @@ console.log(q7);
 
  // Your code here
 console.log("Bonus Question2");
+var duplicatedLetters = ["a","b","c","a","b"];
+
 
 
  /** - BONUS 3
