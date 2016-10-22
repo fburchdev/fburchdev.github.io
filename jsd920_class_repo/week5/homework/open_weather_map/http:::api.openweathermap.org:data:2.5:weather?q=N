@@ -1,0 +1,3 @@
+http://api.openweathermap.org/data/2.5/weather?q=NewYork&APPID=0acbdb0b13801c9c886e9a2e83b6152e
+
+http://api.openweathermap.org/data/2.5/weather?q=NewYork&units=imperial&APPID=0acbdb0b13801c9c886e9a2e83b6152e
