@@ -34,7 +34,6 @@ Open Weather Map Instructions:
 var weatherObject = {};
 function getWeather(url) {
 	console.log("hello from inside getWeather...starting");
-	//var url = 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json'
 	jQuery.get(url, function(weather) {
 		console.log(weather);
 		weatherObject = JSON.parse(weather);
@@ -48,7 +47,39 @@ function getWeather(url) {
 		var p = [temp, humidity, windSpeed];
 		p.forEach( function(item) { div.append(item) } );
 	}, 'text');
+}
 
+function getWeatherByLocation() {
+	console.log("hello from inside getWeatherByLocation...starting");
+	var city = $('input:text[name=city]').val();
+	var state = $('input:text[name=state]').val();
+	var div = $('#weatherByLocation');
+	div.empty();
+	var paragraph = $('<p>').html('WEATHER FOR ' + city);
+	div.append(paragraph);
+	var apiKey = '0acbdb0b13801c9c886e9a2e83b6152e';
+	var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&APPID=' + apiKey;
+	console.log(url);
+	jQuery.get(url, function(weather) {
+		console.log(weather);
+		weatherObject = JSON.parse(weather);
+		if(weatherObject.main.temp > 75) {
+			div.css("background-color", "#ff6666");
+		}else if(weatherObject.main.temp < 65) {
+			div.css("background-color","lightblue");
+		}
+		else{
+			div.css("background-color", "white");
+		}
+		console.log('TEMP: ' + weatherObject.main.temp);
+		console.log('HUMIDITY: ' + weatherObject.main.humidity);
+		console.log('WIND SPEED: ' + weatherObject.wind.speed);
+		var temp = $('<p>').html('TEMP: ' + weatherObject.main.temp);
+		var humidity = $('<p>').html('HUMIDITY: ' + weatherObject.main.humidity);
+		var windSpeed = $('<p>').html('WIND SPEED: ' + weatherObject.wind.speed);
+		var p = [temp, humidity, windSpeed];
+		p.forEach( function(item) { div.append(item) } );
+	}, 'text');
 }
 
 
@@ -57,6 +88,5 @@ $(document).ready(function () {
   var apiKey = '0acbdb0b13801c9c886e9a2e83b6152e';
   var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q=NewYork&units=imperial&APPID=' + apiKey;
   getWeather(weatherUrl);
-
 });
 

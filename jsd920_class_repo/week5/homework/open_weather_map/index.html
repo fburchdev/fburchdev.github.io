@@ -13,10 +13,18 @@
 		<h2>Current Weather in NYC</h2>
 		<div id="nyc-weather"></div>
 	</div>
-	<hr>
+    <hr>
+    <h2>Current Weather Around the World</h2>
+    City and *State:<br>
+    <input type="text" name="city"><br>
+    <button onclick="getWeatherByLocation()">Get Weather</button><br>
+    *State abbreviation optional
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+    <div id="weatherByLocation">
+    </div>
 
 </body>
 </html>
