@@ -27,3 +27,10 @@ function displayLocation(organization) {
 //implementation
 }
 
+#### APIs
+The application will use APIs from Twitter and Google to obtain feeds from organizations that manage the spaces and location maps. 
+Optionally it will use the Open Weather Map API to obtain weather by zip code for each space.
+
+#### Libraries
+Bootstrap, Handlebars, jQuery, Lodash
+
