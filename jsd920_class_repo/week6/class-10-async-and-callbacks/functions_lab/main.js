@@ -31,15 +31,15 @@
 function makeCountingFunction(predicateFunction) {
 	return function(someArray) {
 		var counter = 0;
-		someArray.each(function(item) {
-			if (predicateFunction(item) == true) { counter++; }
+		someArray.forEach(function(item) {
+			if (predicateFunction(item) === true) { counter++; }
 		})
 		return counter;
 	};
 }
 
 function isOdd(num) {
-	if (num % 2 == 0) {
+	if (num % 2 === 0) {
 		return false;
 	} 
 	else
