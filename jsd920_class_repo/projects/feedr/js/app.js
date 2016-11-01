@@ -26,9 +26,11 @@ function getData() {
         mashableObject.new.forEach(function(item) {
             console.log(item.title + " " + item.channel_label);
             var articleObject = {};
+            articleObject.imageLink = item.responsive_images[2].image;
             articleObject.title = item.title;
-            articleObject.channel_label = item.channel_label;
+            articleObject.category = item.channel_label;
             articleObject.link = item.link;
+            articleObject.shares = item.shares.total;
             mashableArray.push(articleObject);
         });
         displayData(mashableArray);
@@ -40,8 +42,13 @@ function displayData(articleArray) {
     var ul = $('#articles');
     articleArray.forEach(function(item){
         //console.log(item.title + " " + item.channel_label);
-        var li = $('<li>').html(item.title + " " + item.channel_label);
+        var li = $('<li>').html(item.imageLink + " " + item.title + " " + item.category + " " + item.link + " " + item.shares);
         ul.append(li);
+        var img = $('<img />', {
+            src: item.imageLink,
+            alt: 'ARTICLE IMAGE'
+        });
+        img.prependTo(li);
     });
 }
 
