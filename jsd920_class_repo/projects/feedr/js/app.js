@@ -3,15 +3,21 @@
 */
 
 //https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/stories.json
+//https://www.reddit.com/top.json
 
 //inside document.ready...
 //get request to retrieve data
 //populate json object with data
 //display data - dom manupulation
 
-//responsive_images.image[2], title, channel_label, shares.total, link
+//fields from mashable
+//responsive_images.image[2], title, channel_label, shares.total, link, content.plain
+//fields from reddit
+//data.children.data ...title, ups, thumbnail, subreddit, permalink
+
 
 var mashableUrl = "https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/stories.json";
+var redditUrl = "https://www.reddit.com/top.json";
 
 function getData() {
     console.log("hello from getData in feedr!");
@@ -31,6 +37,7 @@ function getData() {
             articleObject.category = item.channel_label;
             articleObject.link = item.link;
             articleObject.shares = item.shares.total;
+            articleObject.content = item.content.plain;
             mashableArray.push(articleObject);
         });
         displayData(mashableArray);
@@ -42,13 +49,18 @@ function displayData(articleArray) {
     var ul = $('#articles');
     articleArray.forEach(function(item){
         //console.log(item.title + " " + item.channel_label);
-        var li = $('<li>').html(item.imageLink + " " + item.title + " " + item.category + " " + item.link + " " + item.shares);
+        var link = $('<a/>', {
+            href : item.link,
+            text : item.title
+        });
+        var li = $('<li>').html(item.title + " " + item.category + " " + item.link + " " + item.shares);
         ul.append(li);
         var img = $('<img />', {
             src: item.imageLink,
-            alt: 'ARTICLE IMAGE'
+            alt: item.title
         });
         img.prependTo(li);
+
     });
 }
 
