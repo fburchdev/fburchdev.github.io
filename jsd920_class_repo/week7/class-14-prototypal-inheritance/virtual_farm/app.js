@@ -48,6 +48,23 @@ function Cat(name, sound, image) {
 	FarmAnimal.call(this, name, sound, image);
 }
 
+function Dog(name, sound, image) {
+	FarmAnimal.call(this, name, sound, image);
+}
+
+function Fish(name, sound, image) {
+	FarmAnimal.call(this, name, sound, image);
+}
+
+function displayFarmAnimals(farmAnimals) {
+	farmAnimals.forEach( function(farmAnimal) {
+		//retrieve dom element probably body
+		//create new element, probably div
+		//set background image of div to farmAnimal.image
+		//append div to dom element, probably body
+	})
+}
+
 $(document).ready(function () {
 
 	// push all animal instances here
@@ -55,5 +72,19 @@ $(document).ready(function () {
 	var fredKitten = new Cat("Fred Kitten", "Meow!", "catUrl");
 	console.log(fredKitten);
 	fredKitten.talk();
+	farmAnimals.push(fredKitten);
+
+	var georgePuppy = new Dog("George Puppy", "Woof!", "dogUrl");
+	console.log(georgePuppy);
+	georgePuppy.talk();
+	farmAnimals.push(georgePuppy);
+
+	var ericTilapia = new Fish("Eric Tilapia", "Gurgle!", "fishUrl");
+	console.log(ericTilapia);
+	ericTilapia.talk();
+	farmAnimals.push(ericTilapia);
+
+	console.log(farmAnimals);
+	//displayFarmAnimals();
 
 })
