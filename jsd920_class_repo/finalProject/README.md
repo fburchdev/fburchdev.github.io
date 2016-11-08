@@ -12,7 +12,7 @@ The user will be able to choose a specific green space and highlight its locatio
 
 The application will provide a means for the webmaster to update the information on the site.
 
-A working copy of data to be used in the application is available in [data/greenSpaces.json)
+A working copy of data to be used in the application is available in data/greenSpaces.json
 
 ### Additional Information
 The application will provide the website address and indicate whether each space has an admission fee. 
