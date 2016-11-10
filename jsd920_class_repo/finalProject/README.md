@@ -3,6 +3,7 @@ Mission: To share information about a selection of my favorite parks, botanical 
 
 ### Functional Components
 
+The application will retrieve the first section of the Wikipedia page for the space via jQuery ajax using the Wikipedia API.
 
 The application will incorporate a Google map highlighting the locations of the featured spaces.
 

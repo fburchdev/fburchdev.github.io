@@ -5,6 +5,8 @@
     "imageUrl": "",
     "address": "990 Washington Ave, Brooklyn, NY",
     "zip": "11225",
+    "wikipediaPage": "Brooklyn_Botanic_Garden",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Brooklyn_Botanic_Garden",
     "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis at erat eu elementum. Vestibulum eget neque quis sem egestas aliquam. Integer pulvinar leo rutrum orci convallis tristique. Maecenas nisi orci, rhoncus ut nisl quis, maximus sodales dui. Morbi eros nisl, luctus facilisis aliquam nec, venenatis et ipsum. Mauris suscipit.",
     "hasAdmissionFee": "true"
   },
@@ -14,6 +16,8 @@
     "imageUrl": "",
     "address": "2900 Southern Blvd., Bronx, NY",
     "zip": "10458",
+    "wikipediaPage": "New_York_Botanical_Garden",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/New_York_Botanical_Garden",
     "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis at erat eu elementum. Vestibulum eget neque quis sem egestas aliquam. Integer pulvinar leo rutrum orci convallis tristique. Maecenas nisi orci, rhoncus ut nisl quis, maximus sodales dui. Morbi eros nisl, luctus facilisis aliquam nec, venenatis et ipsum. Mauris suscipit.",
     "hasAdmissionFee": "true"
   }
