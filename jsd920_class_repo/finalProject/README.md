@@ -3,9 +3,9 @@ Mission: To share information about a selection of my favorite parks, botanical 
 
 ### Functional Components
 
-The application will retrieve the first section of the Wikipedia page for the space via jQuery ajax using the Wikipedia API.
+The application will retrieve the first section of the Wikipedia page for the space via jQuery ajax using the Wikipedia API, and include a "Read More" link to provide the user with the option to read the complete article.
 
-The application will incorporate a Google map highlighting the locations of the featured spaces.
+The application will incorporate a Google map highlighting the locations of the featured spaces. This will most likely be implemented using the "Embed" feature provided by Google in the form of iFrames
 
 The user will be able to choose to display/hide information about various locations.
 

@@ -34,6 +34,9 @@ $(document).ready(function() {
        });
 
        var downVote = $('<i class="fa fa-thumbs-down pull-right"></i>');
+       downVote.on('click', function() {
+        updateMessage(id, votes--);
+       });
        var remove = $('<i class="fa fa-trash pull-right"></i>');
         //populate that li with the content
         li.html(messageText);
