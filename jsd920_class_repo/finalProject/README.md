@@ -19,7 +19,7 @@ A working copy of data to be used in the application is available in data/greenS
 The application will provide the website address and indicate whether each space has an admission fee. 
 
 #### Nice to have
-It may include a link to the Wikipedia article for individual spaces, if available. It might also show the current weather for individual spaces, and the top 5 images from 500px.
+The application might show the current weather for individual spaces, and the top 5 images from 500px.
 
 The application may display the Twitter feeds of the organizations that manage the parks/gardens/green spaces.
 
@@ -41,4 +41,7 @@ Optionally it will use the Open Weather Map API to obtain weather by zip code fo
 
 #### Libraries
 Bootstrap, Handlebars, jQuery, Lodash, Firebase SDK (to be added)
+
+#### Image Hosting
+most likely my own photos from imgur
 
