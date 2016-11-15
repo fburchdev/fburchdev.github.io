@@ -8,7 +8,8 @@
     "wikipediaPage": "Brooklyn_Botanic_Garden",
     "wikipediaLink": "https://en.wikipedia.org/wiki/Brooklyn_Botanic_Garden",
     "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis at erat eu elementum. Vestibulum eget neque quis sem egestas aliquam. Integer pulvinar leo rutrum orci convallis tristique. Maecenas nisi orci, rhoncus ut nisl quis, maximus sodales dui. Morbi eros nisl, luctus facilisis aliquam nec, venenatis et ipsum. Mauris suscipit.",
-    "hasAdmissionFee": "true"
+    "hasAdmissionFee": "true",
+    "googleMap": "!1m18!1m12!1m3!1d3026.205212141924!2d-73.9650724845964!3d40.66944717933644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b0ba2a12cbf%3A0x901e0566c863dd73!2s990+Washington+Ave%2C+Brooklyn%2C+NY+11225!5e0!3m2!1sen!2sus!4v1478580927380"
   },
   {
     "name": "New York Botanical Garden",
@@ -19,6 +20,31 @@
     "wikipediaPage": "New_York_Botanical_Garden",
     "wikipediaLink": "https://en.wikipedia.org/wiki/New_York_Botanical_Garden",
     "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis at erat eu elementum. Vestibulum eget neque quis sem egestas aliquam. Integer pulvinar leo rutrum orci convallis tristique. Maecenas nisi orci, rhoncus ut nisl quis, maximus sodales dui. Morbi eros nisl, luctus facilisis aliquam nec, venenatis et ipsum. Mauris suscipit.",
-    "hasAdmissionFee": "true"
+    "hasAdmissionFee": "true",
+    "googleMap": "!1m18!1m12!1m3!1d3017.429304817767!2d-73.88242698459038!3d40.862451979315836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f37c59432439%3A0xd676d2e73f8ca621!2s2900+Southern+Blvd%2C+Bronx%2C+NY+10458!5e0!3m2!1sen!2sus!4v1479180745652"
+  },
+  {
+    "name": "Queens Botanical Garden",
+    "url": "http://www.queensbotanical.org/home",
+    "imageUrl": "",
+    "address": "43-50 Main Street, Flushing, NY",
+    "zip": "11355",
+    "wikipediaPage": "Queens_Botanical_Garden",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Queens_Botanical_Garden",
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis at erat eu elementum. Vestibulum eget neque quis sem egestas aliquam. Integer pulvinar leo rutrum orci convallis tristique. Maecenas nisi orci, rhoncus ut nisl quis, maximus sodales dui. Morbi eros nisl, luctus facilisis aliquam nec, venenatis et ipsum. Mauris suscipit.",
+    "hasAdmissionFee": "true",
+    "googleMap": "!1m18!1m12!1m3!1d3022.4942530850376!2d-73.82966158459384!3d40.751152779327725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2606d1e981601%3A0x3aa917b5cdb24e24!2s43-50+Main+St%2C+Flushing%2C+NY+11355!5e0!3m2!1sen!2sus!4v1479187702216"
+  },
+  {
+    "name": "Conservatory Garden",
+    "url": "http://www.centralparknyc.org/things-to-see-and-do/attractions/conservatory-garden.html",
+    "imageUrl": "",
+    "address": "th Ave & E 105th St",
+    "zip": "10029",
+    "wikipediaPage": "Conservatory_Garden",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Conservatory_Garden",
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis at erat eu elementum. Vestibulum eget neque quis sem egestas aliquam. Integer pulvinar leo rutrum orci convallis tristique. Maecenas nisi orci, rhoncus ut nisl quis, maximus sodales dui. Morbi eros nisl, luctus facilisis aliquam nec, venenatis et ipsum. Mauris suscipit.",
+    "hasAdmissionFee": "false",
+    "googleMap": "!1m18!1m12!1m3!1d3020.5633446461184!2d-73.95378588459256!3d40.79361287932311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f61c430aa3f3%3A0x783c2628f52da74c!2s5th+Ave+%26+E+105th+St%2C+New+York%2C+NY+10029!5e0!3m2!1sen!2sus!4v1479188973437"
   }
 ]

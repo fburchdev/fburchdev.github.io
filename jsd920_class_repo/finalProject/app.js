@@ -14,6 +14,20 @@ $(document).ready(function(document){
             li.html(item.name);
             ul.append(li);
         });
+        var div = $('#map');
+        // quick proof of concept - demo displaying one map
+        var mapString = data[0].googleMap;
+        var mapIFrame = $('<iframe>', {
+            src: "https://www.google.com/maps/embed?pb=" + mapString,
+            frameborder: "0",
+            style: "border:0"
+        });
+        mapIFrame.attr("width", "600");
+        mapIFrame.attr("height", "450");
+
+
+        div.append(mapIFrame);
+        console.log(mapString);
     };
 
     $.ajax({
