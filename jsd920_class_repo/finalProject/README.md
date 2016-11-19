@@ -1,6 +1,8 @@
 ## Favorite Green Spaces in NYC
 Mission: To share information about a selection of my favorite parks, botanical gardens, and outdoor green spaces from around the boroughs. 
 
+[My timesheet and issues document in Evernote](https://www.evernote.com/shard/s141/sh/c3025c8a-356c-476d-9a7d-0f9f29615ac6/ae7af04b7ab63619)
+
 ### Functional Components
 
 The application will retrieve the first section of the Wikipedia page for the space via jQuery ajax using the Wikipedia API, and include a "Read More" link to provide the user with the option to read the complete article.
