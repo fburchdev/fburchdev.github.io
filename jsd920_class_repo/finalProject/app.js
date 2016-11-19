@@ -28,7 +28,7 @@ $(document).ready(function(document){
 
         div.append(mapIFrame);
         console.log(mapString);
-    };
+    }
 
     $.ajax({
         type: "GET",

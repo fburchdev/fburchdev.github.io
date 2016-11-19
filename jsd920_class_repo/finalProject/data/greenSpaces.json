@@ -39,12 +39,25 @@
     "name": "Conservatory Garden",
     "url": "http://www.centralparknyc.org/things-to-see-and-do/attractions/conservatory-garden.html",
     "imageUrl": "",
-    "address": "th Ave & E 105th St",
+    "address": "5th Ave & E 105th St",
     "zip": "10029",
     "wikipediaPage": "Conservatory_Garden",
     "wikipediaLink": "https://en.wikipedia.org/wiki/Conservatory_Garden",
     "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis at erat eu elementum. Vestibulum eget neque quis sem egestas aliquam. Integer pulvinar leo rutrum orci convallis tristique. Maecenas nisi orci, rhoncus ut nisl quis, maximus sodales dui. Morbi eros nisl, luctus facilisis aliquam nec, venenatis et ipsum. Mauris suscipit.",
     "hasAdmissionFee": "false",
     "googleMap": "!1m18!1m12!1m3!1d3020.5633446461184!2d-73.95378588459256!3d40.79361287932311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f61c430aa3f3%3A0x783c2628f52da74c!2s5th+Ave+%26+E+105th+St%2C+New+York%2C+NY+10029!5e0!3m2!1sen!2sus!4v1479188973437"
+  },
+  {
+    "name": "Elizabeth Street Garden",
+    "url": "https://en.wikipedia.org/wiki/Elizabeth_Street_Garden",
+    "imageUrl": "",
+    "address": "Elizabeth Street, between Prince & Spring streets, Little Italy, New York City",
+    "zip": "10012",
+    "wikipediaPage": "Elizabeth_Street_Garden",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Elizabeth_Street_Garden",
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis at erat eu elementum. Vestibulum eget neque quis sem egestas aliquam. Integer pulvinar leo rutrum orci convallis tristique. Maecenas nisi orci, rhoncus ut nisl quis, maximus sodales dui. Morbi eros nisl, luctus facilisis aliquam nec, venenatis et ipsum. Mauris suscipit.",
+    "hasAdmissionFee": "false",
+    "googleMap": "!1m14!1m8!1m3!1d6047.537259853127!2d-73.9973541!3d40.7231096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25988aaa96f05%3A0x5cd153c985f7aad3!2sElizabeth+Street+Garden!5e0!3m2!1sen!2sus!4v1479432110793"
+
   }
 ]
