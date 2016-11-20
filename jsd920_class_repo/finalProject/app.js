@@ -5,6 +5,28 @@
 
 $(document).ready(function(document){
 
+    function getWikipediaArticle(wikipediaPage) {
+        console.log("hello from getWikipediaArticle!");
+        $.ajax({
+            type: "GET",
+            url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + wikipediaPage + "&callback=?",
+            contentType: "application/json; charset=utf-8",
+            async: true,
+            dataType: "json",
+            success: function (data, textStatus, jqXHR) {
+
+                var markup = data.parse.text["*"];
+                var blurb = $('<div></div>').html(markup);
+                $('#article').html($(blurb).find('p'));
+                console.log(wikipediaPage);
+                console.log($(blurb).find('p'));
+            },
+            error: function (errorMessage) {
+                console.log("An Error Occurred while retrieving Wikipedia Article.");
+            }
+        });
+    } //end function getWikipediaArticle
+
     function displayGreenSpaces(data) {
         console.log("Hello from function displayGreenSpaces");
         console.log(data);
@@ -13,6 +35,11 @@ $(document).ready(function(document){
             var li = $('<li>');
             li.html(item.name);
             ul.append(li);
+
+            console.log(item.wikipediaPage);
+            console.log("calling getWikipediaArticle from inside displayGreenSpaces!");
+            getWikipediaArticle(item.wikipediaPage);
+
         });
         var div = $('#map');
         // quick proof of concept - demo displaying one map
