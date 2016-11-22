@@ -27,23 +27,9 @@ $(document).ready(function(document){
         });
     } //end function getWikipediaArticle
 
-    function displayGreenSpaces(data) {
-        console.log("Hello from function displayGreenSpaces");
-        console.log(data);
-        var ul = $('#greenSpaces');
-        data.forEach(function(item) {
-            var li = $('<li>');
-            li.html(item.name);
-            ul.append(li);
+    function getGoogleMap(mapString) {
+        console.log("hello from inside getGoogleMap!");
 
-            console.log(item.wikipediaPage);
-            console.log("calling getWikipediaArticle from inside displayGreenSpaces!");
-            getWikipediaArticle(item.wikipediaPage);
-
-        });
-        var div = $('#map');
-        // quick proof of concept - demo displaying one map
-        var mapString = data[0].googleMap;
         var mapIFrame = $('<iframe>', {
             src: "https://www.google.com/maps/embed?pb=" + mapString,
             frameborder: "0",
@@ -51,10 +37,30 @@ $(document).ready(function(document){
         });
         mapIFrame.attr("width", "600");
         mapIFrame.attr("height", "450");
-
-
+        console.log("this is the mapIFrame from inside getGoogleMap!");
+        console.log(mapIFrame);
+        var div = $('<div>');
         div.append(mapIFrame);
-        console.log(mapString);
+
+        return div;
+    } //end function getGoogleMap
+
+    function displayGreenSpaces(data) {
+        console.log("Hello from function displayGreenSpaces");
+        console.log(data);
+        var ul = $('#greenSpaces');
+        data.forEach(function(item) {
+            var googleMap = getGoogleMap(item.googleMap);
+            var li = $('<li>');
+            li.html(item.name + ", " + item.address + ", " + item.zip);
+            li.append(googleMap);
+            ul.append(li);
+
+            console.log(item.wikipediaPage);
+            console.log("calling getWikipediaArticle from inside displayGreenSpaces!");
+            getWikipediaArticle(item.wikipediaPage);
+        });
+
     }
 
     $.ajax({
