@@ -20,7 +20,7 @@ $(document).ready(function(document){
                 $('#article').html($(blurb).find('p'));
                 console.log(wikipediaPage);
                 console.log($(blurb).find('p'));
-                li.append(blurb);
+                li.append($(blurb).find('p'));
             },
             error: function (errorMessage) {
                 console.log("An Error Occurred while retrieving Wikipedia Article.");
@@ -62,25 +62,7 @@ $(document).ready(function(document){
             getWikipediaArticle(item.wikipediaPage, li);
         });
 
-    }
-
-    $.ajax({
-        type: "GET",
-        url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=Brooklyn_Botanic_Garden&callback=?",
-        contentType: "application/json; charset=utf-8",
-        async: true,
-        dataType: "json",
-        success: function (data, textStatus, jqXHR) {
-
-            var markup = data.parse.text["*"];
-            var blurb = $('<div></div>').html(markup);
-            $('#article').html($(blurb).find('p'));
-
-        },
-        error: function (errorMessage) {
-            console.log("An Error Occurred while retrieving Wikipedia Article.");
-        }
-    });
+    } //end function displayGreenSpaces
 
     $.ajax({
         type: "GET",
@@ -93,8 +75,6 @@ $(document).ready(function(document){
             console.log(data);
             console.log("Calling displayGreenSpaces function");
             displayGreenSpaces(data);
-
-
         },
         error: function (errorMessage) {
             console.log("An Error Occurred while retrieving green Spaces json");
