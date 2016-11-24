@@ -5,8 +5,8 @@
 
 $(document).ready(function(document){
 
-    function getWikipediaArticle(wikipediaPage) {
-        console.log("hello from getWikipediaArticle!");
+    function getWikipediaArticle(wikipediaPage, li) {
+        console.log("hello from inside getWikipediaArticle!");
         $.ajax({
             type: "GET",
             url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + wikipediaPage + "&callback=?",
@@ -20,6 +20,7 @@ $(document).ready(function(document){
                 $('#article').html($(blurb).find('p'));
                 console.log(wikipediaPage);
                 console.log($(blurb).find('p'));
+                li.append(blurb);
             },
             error: function (errorMessage) {
                 console.log("An Error Occurred while retrieving Wikipedia Article.");
@@ -58,7 +59,7 @@ $(document).ready(function(document){
 
             console.log(item.wikipediaPage);
             console.log("calling getWikipediaArticle from inside displayGreenSpaces!");
-            getWikipediaArticle(item.wikipediaPage);
+            getWikipediaArticle(item.wikipediaPage, li);
         });
 
     }
