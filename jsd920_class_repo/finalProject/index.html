@@ -19,6 +19,16 @@
         <li><a href="googleMapDemo.html" target="_blank">Google Map Demo</a></li>
     </ul>
 
+    <div id="greenSpaces"></div>
+
+    <script id="greenSpaces-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each greenSpaces}}
+            <li>{{name}}</li>
+            <li>{{{wikipediaSection}}}</li>
+            {{/each}}
+        </ul>
+    </script>
 
     <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
     <script src="bower_components/lodash/dist/lodash.js" charset="utf-8"></script>

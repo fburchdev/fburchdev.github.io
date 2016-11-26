@@ -72,14 +72,40 @@ $(document).ready(function(document){
         dataType: "json",
         success: function (data, textStatus, jqXHR)  {
             console.log("Retrieving green spaces json");
+            console.log("Retrieving json");
+            data.forEach(function(item) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + item.wikipediaPage + "&callback=?",
+                    contentType: "application/json; charset=utf-8",
+                    async: true,
+                    dataType: "json",
+                    success: function (data, textStatus, jqXHR) {
+                        var markup = data.parse.text["*"];
+                        var blurb = $('<div></div>').html(markup);
+                        //why does handlebars template not show wikipediaSection?
+                        item.wikipediaSection = $(blurb).find('p').prop('innerHTML');
+                    },
+                    error: function (errorMessage) {
+                        console.log("An Error Occurred while retrieving Wikipedia Article.");
+                    }
+                });//end ajax call to wikipedia
+            });//end data forEach
             console.log(data);
-            console.log("Calling displayGreenSpaces function");
-            displayGreenSpaces(data);
+
+            var greenSpacesData = {
+                greenSpaces: data
+            };
+
+            var template = Handlebars.compile($('#greenSpaces-template').html());
+            $('#greenSpaces').append(template(greenSpacesData));
         },
         error: function (errorMessage) {
             console.log("An Error Occurred while retrieving green Spaces json");
         }
 
     });
+
+
 
 });//end document ready function
