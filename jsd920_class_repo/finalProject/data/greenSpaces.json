@@ -2,7 +2,7 @@
   {
     "name": "Brooklyn Botanic Garden",
     "url": "http://www.bbg.org/",
-    "imageUrl": "https://source.unsplash.com/category/nature/200x200",
+    "imageUrl": "https://source.unsplash.com/category/nature/100x100",
     "address": "990 Washington Ave, Brooklyn, NY",
     "zip": "11225",
     "wikipediaPage": "Brooklyn_Botanic_Garden",
@@ -14,7 +14,7 @@
   {
     "name": "New York Botanical Garden",
     "url": "http://www.nybg.org/home/",
-    "imageUrl": "https://source.unsplash.com/category/nature/200x200",
+    "imageUrl": "https://source.unsplash.com/category/nature/100x100",
     "address": "2900 Southern Blvd., Bronx, NY",
     "zip": "10458",
     "wikipediaPage": "New_York_Botanical_Garden",
@@ -26,7 +26,7 @@
   {
     "name": "Queens Botanical Garden",
     "url": "http://www.queensbotanical.org/home",
-    "imageUrl": "https://source.unsplash.com/category/nature/200x200",
+    "imageUrl": "https://source.unsplash.com/category/nature/100x100",
     "address": "43-50 Main Street, Flushing, NY",
     "zip": "11355",
     "wikipediaPage": "Queens_Botanical_Garden",
@@ -38,7 +38,7 @@
   {
     "name": "Conservatory Garden",
     "url": "http://www.centralparknyc.org/things-to-see-and-do/attractions/conservatory-garden.html",
-    "imageUrl": "https://source.unsplash.com/category/nature/200x200",
+    "imageUrl": "https://source.unsplash.com/category/nature/100x100",
     "address": "5th Ave & E 105th St",
     "zip": "10029",
     "wikipediaPage": "Conservatory_Garden",
@@ -50,7 +50,7 @@
   {
     "name": "Elizabeth Street Garden",
     "url": "https://en.wikipedia.org/wiki/Elizabeth_Street_Garden",
-    "imageUrl": "https://source.unsplash.com/category/nature/200x200",
+    "imageUrl": "https://source.unsplash.com/category/nature/100x100",
     "address": "Elizabeth Street, between Prince & Spring streets, Little Italy, New York City",
     "zip": "10012",
     "wikipediaPage": "Elizabeth_Street_Garden",
