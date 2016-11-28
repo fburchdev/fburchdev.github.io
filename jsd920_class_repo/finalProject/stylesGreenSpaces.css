@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+
+
+}
+
+
+li {
+    padding: 15px;
+    overflow: auto;
+    border-style: solid;
+    border-colo: #A9A9A9;
+    border-width: 0 0 1px 0;
+
+}
+
+li div {
+    float: left;
+    margin: 0 15px 0 0;
+
+}
+
+div.googleMap {
+
+}
+
+img.greenSpaceImage {
+    margin: 10px;
+}
+
+.greenSpaceAddress {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.greenSpaceLink {
+    font-size: 18px;
+    font-weight: bold;
+}

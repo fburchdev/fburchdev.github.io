@@ -49,7 +49,9 @@ $(document).ready(function(document){
         mapIFrame.attr("height", "450");
         console.log("this is the mapIFrame from inside getGoogleMap!");
         console.log(mapIFrame);
-        var div = $('<div>');
+        var div = $('<div>', {
+            class: "googleMap"
+        });
         div.append(mapIFrame);
 
         return div;
@@ -60,7 +62,8 @@ $(document).ready(function(document){
         var img = $('<img />', {
            src: imageUrl,
             width:100,
-            alt: "Image of " + name
+            alt: "Image of " + name,
+            class: "greenSpaceImage"
         });
         console.log(img);
         return img;
@@ -71,7 +74,7 @@ $(document).ready(function(document){
         var link = $('<a>', {
            text: name,
             href: url,
-            style: "font-weight:bold"
+            class: "greenSpaceLink"
         });
         console.log(link);
         return link;
@@ -89,7 +92,7 @@ $(document).ready(function(document){
             var link = getLink(item.url, item.name);
             var li = $('<li>');
 
-            li.html("  " + item.address + ", " + item.zip + ", " + isFree);
+            li.html("<br><span class='greenSpaceAddress'>" + item.address + ", " + item.zip + ", " + isFree + "</span>");
             li.append(googleMap);
             li.prepend(link);
             li.prepend(img);
